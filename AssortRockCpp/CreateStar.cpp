@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 void CreateStar(int _iMaxStar, int _iDir)
 {
 	switch (_iDir)
 	{
-		// »ï°¢Çü ¸ğ¾çÀ¸·Î Ãâ·Â
+		// ì •ì‚¼ê°í˜• ì¶œë ¥
 	case 1:
 		for (int i = 0; i < _iMaxStar; ++i)
 		{
@@ -17,7 +17,7 @@ void CreateStar(int _iMaxStar, int _iDir)
 		}
 		break;
 
-		// ¿ª»ï°¢Çü ¸ğ¾çÀ¸·Î Ãâ·Â
+		// ì—­ì‚¼ê°í˜• ì¶œë ¥
 	case -1:
 		for (int i = 0; i < _iMaxStar; ++i)
 		{
@@ -32,18 +32,4 @@ void CreateStar(int _iMaxStar, int _iDir)
 	}
 
 	return;
-}
-
-int main()
-{
-	CreateStar(5, 1);
-
-	printf("\n");
-	CreateStar(5, -1);
-
-	printf("\n");
-	CreateStar(3, 1);
-
-	printf("\n");
-	CreateStar(3, -1);
 }
