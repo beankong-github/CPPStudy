@@ -17,7 +17,7 @@ void RandomArray(int* _pArr, int _iCount,int _iMin, int _iMax) // 배열 주소,
 
 }
 
-void Sort(int* _pArr, int _iCount, int _iDir) // 배열 주소, 배열 크기, 정렬 방향
+void Bubble(int* _pArr, int _iCount, int _iDir) // 배열 주소, 배열 크기, 정렬 방향
 {
 	// 포인터 초기화
 	int* front = nullptr;
@@ -28,19 +28,26 @@ void Sort(int* _pArr, int _iCount, int _iDir) // 배열 주소, 배열 크기, �
 	{
 		for (int i = 0; i < _iCount-1; ++i)
 		{
+			bool bSwap = false;
+
 			for (int j = 0; j < _iCount-(i+1); ++j)
 			{
 				front = _pArr + j;
 				back = front + 1;
-
+				
 				if (*front > *back)
 				{
 					// 교환
 					int tmp = *front;
 					*front = *back;
 					*back = tmp;
+
+					bSwap = true;
 				}
 			}
+
+			if (!bSwap)
+				break;
 		}
 	}
 
@@ -49,6 +56,8 @@ void Sort(int* _pArr, int _iCount, int _iDir) // 배열 주소, 배열 크기, �
 	{
 		for (int i = 0; i < _iCount - 1; ++i)
 		{
+			bool bSwap = false;
+
 			for (int j = 0; j < _iCount - (i + 1); ++j)
 			{
 				front = _pArr + j;
@@ -60,8 +69,12 @@ void Sort(int* _pArr, int _iCount, int _iDir) // 배열 주소, 배열 크기, �
 					int tmp = *front;
 					*front = *back;
 					*back = tmp;
+
+					bSwap = true;
 				}
 			}
+			if (!bSwap)
+				break;
 		}
 	}
 

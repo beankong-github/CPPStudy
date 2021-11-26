@@ -141,6 +141,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BubbleSort.cpp" />
+    <ClCompile Include="Dynamic_Array.cpp" />
+    <ClCompile Include="InsertSort.cpp" />
+    <ClCompile Include="Linked List.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="CreateStar.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -148,9 +151,11 @@
     <ClCompile Include="pointer_나이차이.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="QuickSort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Assignment.h" />
+    <ClInclude Include="Dynamic_Array.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
