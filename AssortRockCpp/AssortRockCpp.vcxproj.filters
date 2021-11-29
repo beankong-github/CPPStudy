@@ -5,10 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="리소스 파일">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -16,48 +12,69 @@
     <Filter Include="소스 파일\Main">
       <UniqueIdentifier>{505fddd8-1c7c-4c21-9e57-0782b0525d43}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\과제">
-      <UniqueIdentifier>{620ad30b-9acd-415f-880b-c3d09c4b2167}</UniqueIdentifier>
+    <Filter Include="소스 파일\Func">
+      <UniqueIdentifier>{5a5d8a30-e9f3-49a2-bb73-3bbaadeba9f6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\자습">
-      <UniqueIdentifier>{5bbf365a-2ce4-45ce-ab17-a9f043253a37}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\DataStructure">
+    <Filter Include="소스 파일\Func\DataStructure">
       <UniqueIdentifier>{d5baa341-a17b-4b28-a492-bd248912c93b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Func\DataStructure\Header">
+      <UniqueIdentifier>{04eed826-71bc-4651-9524-b998c5492e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Func\DataStructure\Code">
+      <UniqueIdentifier>{f72ff1c4-2011-4929-aae9-cb9d65171b5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Func\Sort">
+      <UniqueIdentifier>{ab328b79-9b28-4626-8e1b-972c6cdb2105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Func\Sort\Code">
+      <UniqueIdentifier>{6391efac-d21a-47ca-9591-87d038a8a033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Func\Sort\Header">
+      <UniqueIdentifier>{b1367c6d-f8ef-45c5-945d-1ac2aaa4e354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Func\String">
+      <UniqueIdentifier>{b740e9dd-94b8-4453-8bf4-38297e21475b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Func\String\Header">
+      <UniqueIdentifier>{a086f636-96c9-42f9-a6fc-d2ed8190f35b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Func\String\Code">
+      <UniqueIdentifier>{7eabad03-1934-40a7-854f-8f7d4dd124f8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일\Main</Filter>
     </ClCompile>
-    <ClCompile Include="CreateStar.cpp">
-      <Filter>소스 파일\과제</Filter>
+    <ClCompile Include="Dynamic_Array.cpp">
+      <Filter>소스 파일\Func\DataStructure\Code</Filter>
     </ClCompile>
-    <ClCompile Include="pointer_나이차이.cpp">
-      <Filter>소스 파일\자습</Filter>
+    <ClCompile Include="Linked_List.cpp">
+      <Filter>소스 파일\Func\DataStructure\Code</Filter>
     </ClCompile>
     <ClCompile Include="BubbleSort.cpp">
-      <Filter>소스 파일\과제</Filter>
+      <Filter>소스 파일\Func\Sort\Code</Filter>
     </ClCompile>
-    <ClCompile Include="QuickSort.cpp">
-      <Filter>소스 파일\과제</Filter>
+    <ClCompile Include="CreateStar.cpp">
+      <Filter>소스 파일\Func\Sort\Code</Filter>
     </ClCompile>
     <ClCompile Include="InsertSort.cpp">
-      <Filter>소스 파일\과제</Filter>
+      <Filter>소스 파일\Func\Sort\Code</Filter>
     </ClCompile>
-    <ClCompile Include="Dynamic_Array.cpp">
-      <Filter>소스 파일\DataStructure</Filter>
-    </ClCompile>
-    <ClCompile Include="Linked List.cpp">
-      <Filter>소스 파일\DataStructure</Filter>
+    <ClCompile Include="QuickSort.cpp">
+      <Filter>소스 파일\Func\Sort\Code</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Assignment.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Dynamic_Array.h">
-      <Filter>소스 파일\DataStructure</Filter>
+      <Filter>소스 파일\Func\DataStructure\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Linked_List.h">
+      <Filter>소스 파일\Func\DataStructure\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort.h">
+      <Filter>소스 파일\Func\Sort\Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

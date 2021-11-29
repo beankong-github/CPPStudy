@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -143,19 +143,17 @@
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="Dynamic_Array.cpp" />
     <ClCompile Include="InsertSort.cpp" />
-    <ClCompile Include="Linked List.cpp" />
+    <ClCompile Include="Linked_List.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="CreateStar.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="pointer_나이차이.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="QuickSort.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Assignment.h" />
+    <ClInclude Include="Sort.h" />
     <ClInclude Include="Dynamic_Array.h" />
+    <ClInclude Include="Linked_List.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
