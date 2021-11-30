@@ -80,10 +80,10 @@ int pop_back(tList* _pList)
 		free(_pList->pTailNode);
 		
 		tNode* tCurNode = _pList->pHeadNode;
-		while ()
-		{
+		//while ()
+		//{
 
-		}
+		//}
 	}
 	
 	return 0;

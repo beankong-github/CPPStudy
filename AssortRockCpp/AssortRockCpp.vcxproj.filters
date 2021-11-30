@@ -65,6 +65,12 @@
     <ClCompile Include="QuickSort.cpp">
       <Filter>소스 파일\Func\Sort\Code</Filter>
     </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>소스 파일\Func\String\Code</Filter>
+    </ClCompile>
+    <ClCompile Include="main_stringTest.cpp">
+      <Filter>소스 파일\Main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dynamic_Array.h">
@@ -75,6 +81,9 @@
     </ClInclude>
     <ClInclude Include="Sort.h">
       <Filter>소스 파일\Func\Sort\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>소스 파일\Func\String\Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
