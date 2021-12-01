@@ -42,6 +42,9 @@
     <Filter Include="소스 파일\Func\String\Code">
       <UniqueIdentifier>{7eabad03-1934-40a7-854f-8f7d4dd124f8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Func\NewFilter1">
+      <UniqueIdentifier>{6cb92536-1794-41fd-bbd2-19d169f45c56}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

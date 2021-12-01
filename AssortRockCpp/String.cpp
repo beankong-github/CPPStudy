@@ -21,9 +21,37 @@ int My_wcslen(const wchar_t* _spString)
 }
 
 // 문자열 복사
-void My_wmemcpy(const wchar_t* _spTo, const wchar_t* _spFrom)
+int My_wmemcpy(wchar_t* _dest, size_t destSize, const wchar_t* _src, size_t count)
 {
-	
+	if (count > destSize || count < 0)
+		return 0;
+
+	for (size_t i = 0; i < count; i++)
+	{
+		_dest[i] = _src[i];
+	}
+
+}
+
+// 문자열 복사2
+int My_wmemmove(wchar_t* _dest, size_t _destSize, const wchar_t* _src, size_t count)
+{
+	if (count > _destSize || count < 0)
+		return 0;
+
+	wchar_t* srcCpy = (wchar_t*)malloc(sizeof(wchar_t) * (count + 1));
+
+	for (int i = 0; i < count; i++)
+	{
+		srcCpy[i] = _src[i];
+		srcCpy[i+1] = L'\0';
+	}
+
+	for (int i = 0; i < count; i++)
+	{
+		_dest[i] = srcCpy[i];
+	}
+
 }
 
 // 문자열 결합
@@ -58,8 +86,30 @@ wchar_t* My_wcsncat(const wchar_t* _spTarget, const wchar_t* _spAdd, int _count)
 }
 
 // 문자열 비교
-int My_wcascmp(const wchar_t* _spTarget, const wchar_t* _spAdd)
+int My_wcscmp(const wchar_t* _spString1, const wchar_t* _spString2)
 {
+	int i = 0;
+	wchar_t wcChar1 = _spString1[i];
+	wchar_t wcChar2 = _spString2[i];
+
+	while (wcChar1 != '\0' || wcChar2 != '\0')
+	{
+		// 두 문자가 같을 때
+		if (wcChar1 == wcChar2)
+		{
+			++i;
+			wcChar1 = _spString1[i];
+			wcChar2 = _spString2[i];
+			continue;
+		}
+
+		// 두 문자가 다를 때
+		if (wcChar1 > wcChar2)
+			return 1;
+		
+		else if (wcChar1 < wcChar2)
+			return -1;
+	}
 
 	return 0;
 }
