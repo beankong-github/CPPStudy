@@ -159,6 +159,7 @@
     <ClInclude Include="Dynamic_Array.h" />
     <ClInclude Include="Linked_List.h" />
     <ClInclude Include="String.h" />
+    <ClInclude Include="template.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

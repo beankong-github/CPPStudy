@@ -1,5 +1,6 @@
 #include "String.h"
 #include <atomic>
+#include <cassert>
 
 // 문자열 길이 구하기
 int My_wcslen(const wchar_t* _spString)
@@ -55,34 +56,22 @@ int My_wmemmove(wchar_t* _dest, size_t _destSize, const wchar_t* _src, size_t co
 }
 
 // 문자열 결합
-wchar_t* My_wcsncat(const wchar_t* _spTarget, const wchar_t* _spAdd, int _count)
+wchar_t* My_wcsncat(wchar_t* _spTarget, const wchar_t* _spAdd, int _count)
 {
 	int iTargetLen = My_wcslen(_spTarget);
 	int iAddLen = My_wcslen(_spAdd);
-	wchar_t* wcsNew = (wchar_t*)malloc(sizeof(wchar_t) * _count);
-	int i, j;
-
-	if (wcsNew == nullptr)
-		return nullptr;
+	int i, j = 0;
 
 	if (iTargetLen + iAddLen >= _count)
-		return nullptr;
+		assert(nullptr);
 
 	
-	for (i = 0; i < iTargetLen; i++)
+	for (i = 0; i <= iAddLen; i++)
 	{
-		wcsNew[i] = _spTarget[i];
+		_spTarget[iTargetLen + i] = _spAdd[i];
 	}
 
-	for (j = 0; j < iAddLen; j++)
-	{
-		wcsNew[i + j] = _spAdd[j];
-	}
-
-	wcsNew[i + j] = L'\0';
-	
-	return wcsNew;
-
+	return _spTarget;
 }
 
 // 문자열 비교
