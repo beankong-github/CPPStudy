@@ -42,9 +42,6 @@
     <Filter Include="소스 파일\Func\String\Code">
       <UniqueIdentifier>{7eabad03-1934-40a7-854f-8f7d4dd124f8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Func\NewFilter1">
-      <UniqueIdentifier>{6cb92536-1794-41fd-bbd2-19d169f45c56}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\Func\etc">
       <UniqueIdentifier>{ba082730-2aaa-414c-b932-ec019d571f12}</UniqueIdentifier>
     </Filter>
@@ -62,9 +59,6 @@
     <ClCompile Include="BubbleSort.cpp">
       <Filter>소스 파일\Func\Sort\Code</Filter>
     </ClCompile>
-    <ClCompile Include="CreateStar.cpp">
-      <Filter>소스 파일\Func\Sort\Code</Filter>
-    </ClCompile>
     <ClCompile Include="InsertSort.cpp">
       <Filter>소스 파일\Func\Sort\Code</Filter>
     </ClCompile>
@@ -76,6 +70,12 @@
     </ClCompile>
     <ClCompile Include="main_stringTest.cpp">
       <Filter>소스 파일\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateStar.cpp">
+      <Filter>소스 파일\Func\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionSort.cpp">
+      <Filter>소스 파일\Func\Sort\Code</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

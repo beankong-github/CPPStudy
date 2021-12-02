@@ -152,6 +152,7 @@
     </ClCompile>
     <ClCompile Include="main_stringTest.cpp" />
     <ClCompile Include="QuickSort.cpp" />
+    <ClCompile Include="SelectionSort.cpp" />
     <ClCompile Include="String.cpp" />
   </ItemGroup>
   <ItemGroup>

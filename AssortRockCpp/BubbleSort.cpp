@@ -1,22 +1,6 @@
 #include <iostream>
 #include <time.h>
 
-void RandomArray(int* _pArr, int _iCount,int _iMin, int _iMax) // 배열 주소, 배열 크기, 최소값, 최대값
-{
-	srand(time(nullptr));
-
-	for (int i = 0; i < _iCount; i++)
-	{
-		// _iMan 이상 _iMax 이하의 랜덤 수 생성
-		int random = (rand() % ((_iMax - _iMin) + 1));
-		random += _iMin;
-
-		// 랜덤 수 배열에 대입
-		*(_pArr + i) = random;
-	}
-
-}
-
 void Bubble(int* _pArr, int _iCount, int _iDir) // 배열 주소, 배열 크기, 정렬 방향
 {
 	// 포인터 초기화
