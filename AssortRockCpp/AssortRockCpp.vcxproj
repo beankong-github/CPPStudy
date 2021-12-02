@@ -156,6 +156,7 @@
     <ClCompile Include="QuickSort.cpp" />
     <ClCompile Include="SelectionSort.cpp" />
     <ClCompile Include="String.cpp" />
+    <ClCompile Include="MergeSort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sort.h" />

@@ -12,6 +12,9 @@ void Quick(int* _pArr, int _iCount, int _iDir);
 // 선택 정렬
 void Selection(int* _iArr, int _iCount, int _iDir);
 
+// 병합 정렬
+void Merge(int* _iArr, int _iCounter, int _iDir);
+
 // 랜덤 배열 생성
 void RandomArray(int* _pArr, int _iCount,int _iMin, int _iMax) // 배열 주소, 배열 크기, 최소값, 최대값
 {

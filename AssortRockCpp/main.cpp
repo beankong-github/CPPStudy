@@ -21,11 +21,11 @@ int main()
 	// ==============
 	// 정렬 과제
 	// ==============
-	int iArr1[10] = {5,4,3,2,1,};
-	int iArr2[10] = {6,7,8,9,10,};
+	int iArr1[5] = {5,4,3,2,1};
+	int iArr2[5] = {6,7,8,9,10};
 	
-	RandomArray(iArr1, 10, 0, 10);
-	RandomArray(iArr2, 10, 0, 10);
+	RandomArray(iArr1, 5, 0, 10);
+	RandomArray(iArr2, 5, 0, 10);
 
 
 	// 버블
@@ -42,6 +42,10 @@ int main()
 	// 선택
 	//Selection(iArr1, 10, 1);
 	//Selection(iArr2, 10, -1);
+
+	// 머지
+ 	Merge(iArr1, 5, 1);
+ 	Merge(iArr2, 5, -1);
 
 	for (int i = 0; i < 5; i++)
 	{
