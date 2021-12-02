@@ -145,12 +145,14 @@
     <ClCompile Include="InsertSort.cpp" />
     <ClCompile Include="Linked_List.cpp" />
     <ClCompile Include="main.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="CreateStar.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="main_stringTest.cpp" />
+    <ClCompile Include="main_stringTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="QuickSort.cpp" />
     <ClCompile Include="SelectionSort.cpp" />
     <ClCompile Include="String.cpp" />
