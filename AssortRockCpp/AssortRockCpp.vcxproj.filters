@@ -18,12 +18,6 @@
     <Filter Include="소스 파일\Func\DataStructure">
       <UniqueIdentifier>{d5baa341-a17b-4b28-a492-bd248912c93b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Func\DataStructure\Header">
-      <UniqueIdentifier>{04eed826-71bc-4651-9524-b998c5492e39}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\Func\DataStructure\Code">
-      <UniqueIdentifier>{f72ff1c4-2011-4929-aae9-cb9d65171b5c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\Func\Sort">
       <UniqueIdentifier>{ab328b79-9b28-4626-8e1b-972c6cdb2105}</UniqueIdentifier>
     </Filter>
@@ -50,12 +44,6 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일\Main</Filter>
     </ClCompile>
-    <ClCompile Include="Dynamic_Array.cpp">
-      <Filter>소스 파일\Func\DataStructure\Code</Filter>
-    </ClCompile>
-    <ClCompile Include="Linked_List.cpp">
-      <Filter>소스 파일\Func\DataStructure\Code</Filter>
-    </ClCompile>
     <ClCompile Include="BubbleSort.cpp">
       <Filter>소스 파일\Func\Sort\Code</Filter>
     </ClCompile>
@@ -80,14 +68,17 @@
     <ClCompile Include="MergeSort.cpp">
       <Filter>소스 파일\Func\Sort\Code</Filter>
     </ClCompile>
+    <ClCompile Include="Dynamic_Array.cpp">
+      <Filter>소스 파일\Func\DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="Linked_List.cpp">
+      <Filter>소스 파일\Func\DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="MyVector.cpp">
+      <Filter>소스 파일\Func\DataStructure</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dynamic_Array.h">
-      <Filter>소스 파일\Func\DataStructure\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Linked_List.h">
-      <Filter>소스 파일\Func\DataStructure\Header</Filter>
-    </ClInclude>
     <ClInclude Include="Sort.h">
       <Filter>소스 파일\Func\Sort\Header</Filter>
     </ClInclude>
@@ -96,6 +87,15 @@
     </ClInclude>
     <ClInclude Include="template.h">
       <Filter>소스 파일\Func\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamic_Array.h">
+      <Filter>소스 파일\Func\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Linked_List.h">
+      <Filter>소스 파일\Func\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="MyVector.h">
+      <Filter>소스 파일\Func\DataStructure</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
