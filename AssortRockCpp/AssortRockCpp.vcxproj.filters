@@ -74,8 +74,8 @@
     <ClCompile Include="Linked_List.cpp">
       <Filter>소스 파일\Func\DataStructure</Filter>
     </ClCompile>
-    <ClCompile Include="MyVector.cpp">
-      <Filter>소스 파일\Func\DataStructure</Filter>
+    <ClCompile Include="main_MyVector.cpp">
+      <Filter>소스 파일\Main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
